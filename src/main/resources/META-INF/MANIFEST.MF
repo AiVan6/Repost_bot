@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Main-Class: org.example.Main
+Class-Path: jersey-client-2.35.jar commons-logging-1.2.jar jakarta.xml.b
+ ind-api-2.3.3.jar jakarta.inject-2.6.1.jar grizzly-http-server-2.4.4.ja
+ r httpcore-4.4.13.jar jackson-jaxrs-base-2.14.2.jar grizzly-http-2.4.4.
+ jar jersey-server-2.35.jar jakarta.validation-api-2.0.2.jar sqlite-jdbc
+ -3.42.0.0.jar jackson-datatype-jsr310-2.14.2.jar commons-io-2.11.0.jar 
+ jakarta.ws.rs-api-2.1.6.jar jersey-media-json-jackson-2.35.jar aopallia
+ nce-repackaged-2.6.1.jar javassist-3.25.0-GA.jar hk2-utils-2.6.1.jar co
+ mmons-codec-1.15.jar httpmime-4.5.13.jar hk2-api-2.6.1.jar httpclient-4
+ .5.13.jar osgi-resource-locator-1.0.3.jar jersey-common-2.35.jar jakart
+ a.annotation-api-1.3.5.jar jackson-annotations-2.14.2.jar commons-lang3
+ -3.12.0.jar jersey-container-grizzly2-http-2.35.jar jsoup-1.9.2.jar jac
+ kson-databind-2.14.2.jar jackson-jaxrs-json-provider-2.14.2.jar jersey-
+ entity-filtering-2.35.jar telegrambots-6.8.0.jar slf4j-api-2.0.3.jar ja
+ ckson-core-2.14.2.jar jackson-module-jaxb-annotations-2.14.2.jar jersey
+ -hk2-2.35.jar grizzly-framework-2.4.4.jar hk2-locator-2.6.1.jar telegra
+ mbots-meta-6.8.0.jar slf4j-simple-2.0.7.jar
+
