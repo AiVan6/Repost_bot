@@ -40,8 +40,7 @@ public class DB {
         try {
             statement = conn.createStatement();
             statement.execute("CREATE TABLE IF NOT EXISTS Groups(" +
-                                "name TEXT NOT NULL," +
-                                "id INTEGER NOT NULL);");
+                                "id INTEGER NOT NULL UNIQUE);");
             statement.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -63,15 +62,14 @@ public class DB {
         }
     }
 
-    public void insertTable(String name, long  id){
+    public void insertTable(long  id){
 
         try {
             preparedStatement = null;
-            String sql = "INSERT INTO Groups(name,id) VALUES (?,?);";
+            String sql = "INSERT INTO Groups(id) VALUES (?);";
             preparedStatement = conn.prepareStatement(sql);
 
-            preparedStatement.setString(1,name);
-            preparedStatement.setLong(2,id);
+            preparedStatement.setLong(1,id);
             preparedStatement.executeUpdate();
 //            conn.commit();
         } catch (SQLException e) {
@@ -80,19 +78,6 @@ public class DB {
 
     }
 
-    public void createTableId(long chatId){
-        try {
-            String sql = "CREATE TABLE IF NOT EXISTS "+chatId+" (" +
-                            "name TEXT NOT NULL," +
-                            "id INTEGER NOT NULL," +
-                            "count INTEGER NOT NULL);";
-
-           statement.execute(sql);
-
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     public boolean checkChat(long id){
         try {

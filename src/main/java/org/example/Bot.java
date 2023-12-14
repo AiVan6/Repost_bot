@@ -44,9 +44,7 @@ public class Bot extends TelegramLongPollingBot {
             System.out.println( inMess.getFrom().getUserName());
             if(userName.contains(inMess.getFrom().getUserName())) {
                 if (currChatId < 0) {
-                    if (!db.checkChat(currChatId)) {
-                        db.insertTable(inChat.getTitle(), currChatId);
-                    }
+                    db.insertTable(currChatId);
                 } else if (currChatId > 0 && (userName.contains(inChat.getUserName()))) {
                     arrayList = db.getChatList();
                     if (inMess.isCommand()) {
