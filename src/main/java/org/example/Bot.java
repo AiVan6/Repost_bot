@@ -15,8 +15,8 @@ import java.util.Map;
 
 public class Bot extends TelegramLongPollingBot {
 
-    final private String BOT_NAME = "aidamirpervi_bot";//aidamirpervi_bot
-    final private String BOT_TOKEN = "6644984596:AAGVc9_d76VZQ9jNJK9M7ZdpYM6F62D7lso";//6644984596:AAGVc9_d76VZQ9jNJK9M7ZdpYM6F62D7lso
+    final private String BOT_NAME = "";//name
+    final private String BOT_TOKEN = "";//Token
     private DB db;
     private ArrayList<Long> arrayList;
 
